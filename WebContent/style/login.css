@@ -1,0 +1,155 @@
+@CHARSET "UTF-8";
+
+/* LOGO */
+#logo {
+	margin: 0 auto;
+	width: 30%;
+	text-align: center;
+}
+
+#logo img{
+	width: 300px;
+}
+
+/* Sezioni */
+#login, #logon {
+	margin: 0 auto;
+	width: 40%;
+	color: #000000;
+	
+	font-weight: bold;
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+	box-sizing: border-box;
+	
+	/*background-image: url("../img/nuvola.png");
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;*/
+	
+	background-color: #FFFFFF;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+
+#login hr, #logon hr {
+	width: 80%;
+	margin: 0 auto;
+}
+/*Titolo*/
+h1 {
+	text-align: center;
+}
+
+/*Scritta errore login fallito*/
+#login #loginError {
+	margin: 0 auto;
+	width: 60%;
+	height: 30px;
+	color: #FF0000;
+}
+
+form {
+	margin: 0 auto;
+	width: 60%;
+}
+
+label {
+	display: block;
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	
+}
+
+input {
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	outline: none;
+}
+
+/*Messaggio errore campo generico*/
+.error {
+	font-weight: normal;
+	color: #FF0000;
+	font-size: 0.7em;	
+}
+
+/*Tabella indirizzo*/
+ table tr { width: 100%; }
+ table tr .viaCell { width: 50%; }
+ table tr .civCell { width: 20%; }
+ table tr .capCell { width: 30%; }
+
+table tr .provinciaCell {width: 20%;}
+
+.submit {
+	width: 30%;
+}
+
+.reset{	width: 30%;
+}
+
+/*Bottone link registrazione*/
+#login #logonLink {
+	text-align: center;
+	background-color: #FFF200;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 0 auto;
+	width: 60%;
+	border: 1px solid #000000;
+	margin-top: 10px;
+}
+
+#login #logonLink a {
+	text-decoration: none;
+	color: #000000;
+}
+
+#logonOk {
+	padding-top: 20px;
+	font-weight: bold;
+	width: 60%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 950px){
+	#logo {
+		width: 70%;
+		overflow: hidden;
+	}
+	
+	#login, #logon {
+		width: 70%;
+	}
+	
+	form {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 750px){
+	#logo img{
+		width: 200px;
+	}
+	
+	#login, #logon {
+		width: 80%;
+	}
+	
+	form {
+		width: 95%;
+	}
+	
+	.submit {
+		width: 35%;
+	}
+
+	.reset{	width: 35%;
+	}
+}

@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+
+#addArticoloForm>div>input, #addArticoloForm>div>select, #addArticoloForm>div>textarea {
+	display: block;
+}
+
+main {
+	overflow: auto;
+}
+
+#addArticoloForm {
+	display: block;
+	overflow: auto;
+	margin: 0 auto;
+	width: 90%;
+}
+#addArticoloForm>div {
+	width: 30%; 
+	height: 650px;
+	margin: 10px;
+	float: left;
+	border: 1px solid black;
+	
+	box-sizing: border-box;
+}
+
+#addArticoloForm label {
+	font-weight: bold;
+}
+#addArticoloForm>div>label {
+	display: block;
+	margin-top: 20px;
+	margin-left: 10px;
+	
+}
+
+#addArticoloForm>div>input, #addArticoloForm>div>textarea, #addArticoloForm>div>select{
+	margin: 0 auto;
+	width: 90%;
+	padding: 5px;
+	border-radius: 10px;
+	outline: 0;
+	
+	box-sizing: border-box;
+}
+
+#inSerieCheckDiv {
+	margin-top: 10px;
+	margin-left: 10px;  
+}
+
+#inSerieCheckDiv>input {
+	width: 20px;
+  	height: 20px; 
+ 	vertical-align: middle;
+}
+
+#inSerieCheckDiv>label {
+	vertical-align: middle;
+}
+
+.errorString{
+	display: block;
+	width: 100%;
+	font-weight: normal;
+	color: #FF0000;
+	font-size: 0.7em;
+	text-align: center;
+}
+
+#addButton{
+	display: block;
+	float: left;
+	clear: both;
+	text-align: center;
+	
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	
+	border: 2px solid;
+	
+	color: #000000;
+	
+	font-weight: bold;
+	padding: 10px;
+	
+	width: 30%;
+	
+	background-color: #FFF200;
+	border-color: #FF6600;
+	
+	cursor: pointer;
+	
+	box-sizing: border-box;
+}
+
+#artCode{
+	color:#909090;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+@media only screen and (max-width: 750px){
+	#addArticoloForm {
+		width: 100%;
+	}
+	
+	#addArticoloForm>div {
+		width: 100%;
+		margin: 0;
+	}
+}

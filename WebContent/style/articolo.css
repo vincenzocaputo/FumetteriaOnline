@@ -1,0 +1,319 @@
+@CHARSET "UTF-8";
+
+
+main {
+	overflow: auto;
+}
+.title { /*Intestazione dato*/
+	font-weight: bold;
+}
+
+/*Nome articolo*/
+h1 {
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	float: left;
+	clear: both;
+}
+
+/*Spazio immagine articolo*/
+ #artImg {
+	width: 25%;
+	float: left;
+	clear: left;
+}
+
+#artImg img {
+	display: block;
+	width: 100%;
+	border: 2px solid #000000;
+	box-sizing: border-box;
+}
+
+/*Area dati articolo*/
+ #artDetails {
+	/*display: table-cell;*/
+	vertical-align: top;
+	width: 75%;
+	padding: 20px;
+	float: left;
+	box-sizing: border-box;
+}
+
+/*Tabella con prezzo, sezione carrello, preferiti*/
+#artDetails #artTable {
+	display: table;
+	width: 100%;
+}
+
+#artDetails #artTable>div {
+	display: table-cell;
+	border-bottom: 2px solid #909090;
+	border-top: 2px solid #909090;
+}
+
+/*Cella prezzo*/
+#artDetails #priceCell {
+	width: 30%;
+	text-align: left;
+	border-right: 2px solid #909090;
+}
+
+/*Prezzo di lisitino*/
+#priceCell #oldPrice {
+	color: #909090;
+	text-decoration: line-through;
+}
+
+/*Prezzo scontato*/
+#priceCell #price {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+/*Cella carrello*/
+#artDetails #cartCell {
+	width: 40%;
+	padding-bottom: 10px;
+	text-align: center;
+	border-right: 2px solid #909090;
+}
+
+#cartCell #stock {
+	margin: 0 auto;
+}
+
+/*Form per aggiungere articolo al carrello*/
+#cartCell form {
+	padding-top: 20px;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*Area input per scegliere quantità*/
+#cartCell #quantity {
+	/*width: 100%;*/
+	width: 100px;
+	height: 40px;
+	background-color: #909090;
+	border: 2px solid black;
+	border-radius: 10px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#cartCell #quantity>label {
+	float: left;
+	margin: 0 auto;
+	vertical-align: bottom;
+	padding: 10px;
+	width: 50%;
+	height: 100%;
+	
+	border-right: none;
+	box-sizing: border-box;
+}
+/*Input quantità*/
+#cartCell #quantity>#number{
+	width: 50%;
+	height: 100%;
+	padding: 10px;
+	
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: none;
+	box-sizing: border-box;
+}
+#cartCell #quantity>#number:invalid {
+	color: #FF0000;
+}
+/*Bottone aggiungi al carrello*/
+#cartCell form #addToCart{
+	display: block;
+	text-align: center;
+	
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	
+	border: 2px solid;
+	
+	color: #000000;
+	
+	font-weight: bold;
+	padding: 10px;
+	
+	width: 80px;
+	
+	background-color: #FFF200;
+	border-color: #FF6600;
+	
+	background-image: url("../img/addToCart.png");
+	background-position: center;
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	
+	cursor: pointer;
+}
+
+#modificaButton{
+	display: block;
+	text-align: center;
+	
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	
+	border: 2px solid;
+	
+	color: #000000;
+	
+	font-weight: bold;
+	padding: 10px;
+	
+	width: 120px;
+	
+	background-color: #FFF200;
+	border-color: #FF6600;
+	
+	text-decoration:none;
+	cursor: pointer;
+}
+
+#eliminaButton{
+	display: block;
+	text-align: center;
+	
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	
+	border: 2px solid;
+	
+	color: #000000;
+	
+	font-weight: bold;
+	padding: 10px;
+	
+	width: 120px;
+	
+	background-color: #FF0000;
+	border-color: #000000;
+	
+	text-decoration:none;
+	cursor: pointer;
+}
+
+/*Cell serie*/
+#artDetails #serieCell {
+	width: 30%; 
+	padding-top: 10px;
+}
+
+#serieName, #serieNum {
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/*Area aggiungi ai preferiti*/
+#serieCell #addPref {
+	display: block;
+	
+	background-color: #1E90FF;
+	border-radius: 30px;
+	border: 2px solid #0000FF;
+	
+	text-align: left;
+	
+	width: 180px;
+	margin: 10px auto;
+	
+	overflow: hidden;
+}
+
+/*Immagine stellina*/
+#serieCell #addPref img {
+	width: 50px;
+	vertical-align: middle;
+	padding: 5px;
+	
+	background-color: #0000FF;
+	border-radius: 30px;
+	border: 2px solid #000000;
+	
+	margin-right: 5px;
+	box-sizing: border-box;
+}
+
+/*Link aggiugni ai preferiti*/
+#serieCell #addPref a {
+	font-weight: bold;
+	color: #000000;
+	
+	text-decoration: none;
+	
+	width: 100%;
+	height: 100%;
+	
+	font-size: 0.8em;
+}
+
+#genere, #formato, #interni, #numPag, #formato {
+	margin-top: 10px;
+	padding: 5px;
+}
+
+
+#description {
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+@media only screen and (max-width: 750px) {
+	
+	 #artImg img{
+		max-height: 300px;
+		width: auto;
+		margin: 0 auto;
+	}
+	 #artDetails {
+		width: 100%;
+		padding: 0;
+	}
+	
+	#artDetails #artTable {
+		display: block;
+		margin-top: 20px;
+	}
+	
+	#artDetails #artTable>div {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		border: 2px solid #909090;
+		box-sizing : border-box;
+	}
+
+	
+	#artDetails #cartCell {
+		text-align: left;
+	}
+	#cartCell form {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	#serieCell #addPref {
+	}
+}

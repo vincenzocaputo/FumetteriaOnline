@@ -1,0 +1,121 @@
+@CHARSET "UTF-8";
+
+
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+/*Riga intestazione*/
+table th {
+	font-size: 1.3em;
+	padding: 5px;
+	border-bottom: 2px solid gray;
+}
+
+td {
+	border-bottom: 2px solid gray;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.delete {
+	width: 20%;
+}
+td .delete img {
+	display: block;
+	width: 100%;
+}
+
+.artImage {
+	width: 8%;
+}
+
+.artImage img {
+	display: block;
+	width: 100%;
+}
+
+.inputNumArt {
+	display: inline-block;
+	border-radius: 20px;
+	width: 50px;
+	padding: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.inputNumArt:invalid {
+	color: #FF0000;
+}
+
+.submitNumArt {	
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 40px;
+	
+	border: 2px solid;
+	
+	color: #000000;
+	padding: 15px;
+	
+	width: 20px;
+	height: 20px;
+	
+	background-image: url("../img/refresh-icon.png");
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+	background-color: #1E90FF;
+	border-color: #0000FF;
+	
+	outline: none;
+}
+
+
+
+main { overflow: auto;}
+
+#total {
+	float: left;
+	margin: 30px;
+	font-weight: bold;
+	font-size: 1.6em;
+	
+}
+
+#order {
+	float: right;
+	display: block;
+	text-align: center;
+	
+	margin-top: 30px;
+	border-radius: 10px;
+	
+	border: 2px solid;
+	
+	color: black;
+	
+	font-weight: bold;
+	padding: 10px;
+	
+	width: 200px;
+	
+	background-color: #FFF200;
+	border-color: #FF6600;
+}
+
+.errorGiacenza {
+	
+	color: #FF0000;
+	font-size: 0.5em;
+}
+
+@media only screen and (max-width: 750px) {
+	#tableCart {
+		overflow-x: scroll;
+	}
+}

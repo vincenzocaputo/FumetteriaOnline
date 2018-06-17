@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+
+
+main {
+	overflow: auto;
+}
+
+
+table {
+	margin-top: 20px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+/*Riga intestazione*/
+table th {
+	font-size: 1.3em;
+	padding: 5px;
+	border-bottom: 2px solid gray;
+}
+
+td {
+	border-bottom: 2px solid gray;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+h1,h4 {
+	margin: 0;
+}
+
+#ordineAddr {
+	float: left;
+	width: 200px;
+	padding: 5px;
+}
+#ordineDate {
+	float: right;
+	width: 200px;
+	padding: 5px;
+	line-height: 2em;
+}
+#total {
+	margin: 30px;
+	font-weight: bold;
+	font-size: 1.6em;
+}
+#ordineID {
+	color: #BFBFC1;
+}
+
+
+#order {
+	float: right;
+	display: block;
+	text-align: center;
+	
+	text-decoration: none;
+	
+	margin-top: 30px;
+	border-radius: 10px;
+	
+	border: 2px solid;
+	
+	color: #000000;
+	
+	font-weight: bold;
+	padding: 10px;
+	
+	width: 200px;
+	
+	background-color: #FFF200;
+	border-color: #FF6600;
+}
+
+.dettagli a{
+	color: #0000FF;
+	text-decoration: none;
+}
+
+.dettagli a:visited{
+	color: #0000FF;
+}
+
+label {
+	font-weight:bold;
+}
+
+#modificaOrdineButton{
+	display: block;
+	text-align: center;
+	
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	
+	border: 2px solid;
+	
+	color: #000000;
+	
+	font-weight: bold;
+	padding: 10px;
+	
+	/*width: 30%;*/
+	width: 80px;
+	
+	background-color: #FFF200;
+	border-color: #FF6600;
+	
+	cursor: pointer;
+}
+
+#dateError {
+	margin-top: 0;
+	color: #FF0000;
+	font-size: 0.8em;
+}
+
+@media only screen and (max-width: 750px) {
+	#orderDetailsTable {
+		overflow-x: scroll;
+	}
+	#ordineDate {
+		float: left;
+	}
+	
+	#order {
+		float: left;
+	}
+}

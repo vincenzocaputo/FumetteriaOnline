@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+    <Resource name="jdbc/fumetteria"
+        auth="Container"
+        driverClassName="com.mysql.jdbc.Driver"
+        type="javax.sql.DataSource"
+        username="utente"
+        password="pass"
+        url="jdbc:mysql://localhost:3306/fumetteria"
+        defaultAutoCommit="false"/>
+</Context>
